@@ -1,0 +1,14 @@
+<div appCargaSuave class="contenedor">
+  <h1>{{titulo}}</h1>
+  <table>
+    <tr>
+      <td>Nombre</td>
+      <td></td>
+    </tr>
+    <tr *ngFor="let cliente of clientes">
+      <td>{{cliente.nombre}}</td>
+      <!-- <td><a routerLink="/ver-cliente/{{cliente._id}}">Ver detalle</a></td> -->
+      <td><a style="cursor: pointer;" (click)="navegarA(cliente._id)">Ver detalle</a></td>
+    </tr>
+  </table>
+</div>
